@@ -19,7 +19,7 @@
 }
 
 .mainLayoutSideBarContainer {
-    background-color: var(--medium-grey);
+    background-color: var(--contrast-color);
     /* width: 5%; */
     max-width: 3.5rem;
     

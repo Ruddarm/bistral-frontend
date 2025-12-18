@@ -2,10 +2,11 @@
     background-color: white;
     width: 100%;
     display: flex;
-    box-shadow: 1px 2px 4px var(--complement-color);
+    box-shadow: 1px 2px 4px var(--cool-dark-grey);
     /* border-bottom:2px solid gainsboro; */
     min-height: 3rem;
     z-index: 1000;
+    border-bottom: 1.5px solid var(--contrast-color);
     padding: 0 1rem;
 }
 #LogoTitle{

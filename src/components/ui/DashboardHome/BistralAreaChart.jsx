@@ -14,8 +14,8 @@ function BistralAreaChart({ data, dataKey }) {
             {/* Gradient must be INSIDE the chart */}
             <defs>
                 <linearGradient id="revGrad" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#4B5563" stopOpacity={0.4} />
-                    <stop offset="100%" stopColor="#4B5563" stopOpacity={0.05} />
+                    <stop offset="0%" stopColor="#5c232d" stopOpacity={0.4} />
+                    <stop offset="100%" stopColor="#5c232d" stopOpacity={0.05} />
                 </linearGradient>
             </defs>
 
@@ -27,7 +27,7 @@ function BistralAreaChart({ data, dataKey }) {
             <Area
                 type="natural"
                 dataKey="count"
-                stroke="#4B5563"
+                stroke="#5c232d"
                 strokeWidth={3}
                 fill="url(#revGrad)"
             />

@@ -50,7 +50,7 @@
 #menuCardName{
     font-size: 1rem;
     font-family: "poppins";
-    color: var(--cool-dark-grey);
+    color: var(--contrast-color);
     font-weight: 400;
     padding: 0.5rem;
     padding-left: 0;
@@ -65,7 +65,7 @@
     color: ghostwhite;
     padding: 4px;
     border-radius: 4px;
-    background-color: var(--cool-dark-grey);
+    background-color: var(--contrast-color);
 }
 #menuCardIcon{
     width: 3rem;

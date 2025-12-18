@@ -2,10 +2,10 @@
 import Style from "./Sidebar.module.css"
 import hamburgerMenuIcon from "../../assets/hamburgerMenu.png";
 import orderIcon from "../../assets/bell.png"
-import menuIcon from "../../assets/menu.png"
+import menuIcon from "../../assets/menu-white.png"
 import homeIcon from "../../assets/home.png"
 import Icon from "../ui/Icons";
-import bistroIcon from "../../assets/restaurant.png"
+import bistroIcon from "../../assets/restaurant-white.png"
 import { useNavigate } from "react-router-dom"
 
 function SideBar() {

@@ -9,7 +9,7 @@ function BistralBarChart({ data, xAxis, }) {
                 <XAxis dataKey={xAxis} tick={{ fontSize: 12 , fontWeight:600 }} />
                 <YAxis allowDecimals={false} />
                 <Tooltip />
-                <Bar fill="#4B5563" className={Style.line} barSize={40} radius={[6, 6, 0, 0]} type="monotone" dataKey="count" stroke="#4B5563" strokeWidth={1.2} dot={{ r: 1 }} />
+                <Bar fill="#5c232d" className={Style.line} barSize={40} radius={[6, 6, 0, 0]} type="monotone" dataKey="count" stroke="#4B5563" strokeWidth={1.2} dot={{ r: 1 }} />
             </BarChart>
         </>
     )

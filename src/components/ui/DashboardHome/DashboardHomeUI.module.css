@@ -21,10 +21,10 @@
 
 .matrixData {
     display: flex;
-
     font-size: 20px;
     font-family: "inter" !important;
     font-weight: 500;
+    color: var(--contrast-color);
     justify-content: flex-end;
     padding: 4px;
     /* color: var(--contrast-color); */
@@ -112,6 +112,7 @@
 .orderNoTag {
     font-family: "poppins";
     font-weight: 400;
+    color: var(--contrast-color);
     /* background-color: black; */
 }
 
@@ -142,7 +143,7 @@
 .chartTitle {
     font-size: 24px;
     margin: 0;
-    color: var(--medium-grey);
+    color: var(--contrast-color);
     /* background-color: yellow; */
 }
 
