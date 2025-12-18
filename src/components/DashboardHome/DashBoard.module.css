@@ -1,0 +1,129 @@
+
+.dashboardMatrix {
+    /* background-color: yellow; */
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 10px; */
+    height: max-content;
+}
+
+.filterBar {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 50%;
+    min-width: 30%;
+    padding-right: 1rem;
+    /* flex: 1; */
+    /* background-color: green; */
+}
+
+.filterContainer {
+    width: max-content;
+    min-width: 80%;
+    /* background-color: pink; */
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin-left: 8px;
+    /* padding: 4px; */
+}
+
+.filterSelect {
+    font-size: 14px;
+    margin-left: 10px;
+    font-family: "poppins";
+     border: var(--contrast-border);
+    border-radius: 4px;
+    padding: 8px 2rem;
+    color: var(--medium-grey);
+    padding-left: 8px;
+    /* padding-right: 2rem; */
+    background-color: transparent;
+
+}
+
+
+.lineChart{
+    /* background-color: var(--light-BG-color); */
+    border-radius: 8px;
+    /* padding: 1rem; */
+    margin: 0;
+}
+.line{
+    /* margin: 1rem !important; */
+    background-color: green;
+}
+
+.responsiveContainer{
+    /* padding: 1rem; */
+    flex: 1;
+    display: flex;
+    width: 100%;
+    /* overflow: hidden; */
+    height: 100%;
+    /* background-color: red; */
+}
+
+
+.recentOrderContainer{
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    height: max-content;
+    border-radius: 8px;
+    border: var(--contrast-border);
+    background-color: white;
+    /* background-color: orange; */
+}
+
+.recentOrderCardContainer{
+    padding: 8px;
+    flex: 1;
+    display: flex;
+    height: max-content;
+    min-height: 50%;
+    flex-direction: column;
+    overflow: auto;
+    /* background-color: purple; */
+}
+.recentOrderHeader{
+    padding: 8px 8px;
+    width: 100%;
+    display: flex;
+    height: 3rem;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: orange; */
+
+}
+
+.recentViewAll{
+    width: 10rem;
+    display: flex;  
+    font-size: 16px;
+    justify-content: center;
+    font-weight: 500;
+    color: var(--medium-grey);
+    /* flex: 1; */
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 4px;
+    border: none;
+}
+
+.recentViewAll:hover{
+    cursor: pointer;
+    background-color: orange;
+}
+
+.PaymentBreakDownContainer{
+    /* background-color: pink; */
+    flex: 1;
+    height: max-content;
+    /* height: 400px; */
+    flex-direction: column;
+    display: flex;
+}

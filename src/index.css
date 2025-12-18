@@ -1,0 +1,72 @@
+:root {
+  /* --light-BG-color: #f9fafb; */
+  /* --light-BG-color: #f9fafb; */
+  --light-BG-color: #f9f7f6;
+  /* --very-dark-grey:#111827; */
+  --cool-dark-grey: #1F2937;
+  --medium-grey: #4B5563;
+  --complement-color:#eee9e9;
+  --contrast-color: #5c232d;
+  /* --medium-grey: #5c232d; */
+
+  --contrast-border: 1.5px solid rgb(229, 231, 235);
+}
+
+html {
+  /* padding: 0.5rem; */
+  /* background-color: pink; */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100vh;
+  display: flex;
+  background-color: var(--light-BG-color);
+
+  /* background-color: yellow; */
+}
+
+#root {
+  display: flex;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  flex: 1;
+  /* background-color: orange; */
+  /* padding: 2rem; */
+}
+
+h1 {
+  /* background-color: aliceblue; */
+  width: 100%;
+  height: max-content;
+  margin: 0;
+}
+
+.flex1 {
+  flex: 1;
+}
+
+.flex-row {
+  display: flex;
+  /* background-color: orange; */
+  flex-direction: row;
+  /* background-color: rebeccapurple I !important; */
+}
+
+.width100 {
+  width: 100%;
+}
+
+.padd1rem {
+  padding: 1rem;
+}

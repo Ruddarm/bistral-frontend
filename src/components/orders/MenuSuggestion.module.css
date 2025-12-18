@@ -1,0 +1,205 @@
+.menuSuggestionContainer {
+    /* background-color: red; */
+    flex: 1;
+    padding: 0.5rem;
+    /* padding: 0 0.5rem; */
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    height: 100%;
+}
+
+.srchBar {
+    width: 100%;
+    max-width:  100%;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    /* overflow: hidden; */
+    /* position: relative; */
+    padding: 10px 0.5rem;
+    /* background-color: yellow; */
+}
+.srchBarInner{
+    /* background-color: orange; */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex: 1;
+    /* width: 30%; */
+}
+.selectedMenuCardContainer{
+    display: flex;
+    width: 100%;
+    /* flex-direction: column; */
+    position: relative;
+    /* justify-content: flex-start; */
+    padding: 10px;
+    justify-content: flex-end;
+    /* align-items: flex-end; */
+    /* background-color: green; */
+}
+#title {
+    padding: 0.5rem 0;
+    font-size: 24px;
+    font-family: var(--cool-dark-grey);
+    font-weight: 600;
+    font-family: "poppins";
+    font-family: "sans-serif";
+    color: var(--contrast-color);
+    /* background-color: orange; */
+}
+
+#menuSrchBar {
+    /* background-color: red; */
+    font-size: 1rem;
+    width: 70%;
+    border-radius: 8px;
+    color: var(--cool-dark-grey);
+    border: var(--contrast-border);
+    padding: 0 0.5rem;
+    /* background-color: red; */
+    font-family: "Poppins";
+
+}
+.selectMenuCard{
+    border: var(--contrast-border);
+    font-size: 1rem;
+    width: 12rem;
+    /* width: max-content; */
+    /* max-width: 20%; */
+    /* margin-left: 1rem; */
+    
+    border-radius: 8px;
+    text-overflow: ellipsis;
+    color: var(--cool-dark-grey);
+    padding: 0.5rem 2rem;
+    font-family: "poppins";
+    background-color: transparent;
+}
+
+.menuSuggestionBox {
+    flex: 1;
+    /* height: max-content; */
+    overflow: auto;
+    /* border-radius: 5px; */
+    /* border: 1.5px solid gainsboro; */
+    /* border-right: none; */
+    /* background-color: yellow; */
+}
+
+.menuCategoryContainer {
+    display: flex;
+    overflow-x: auto;
+    /* background-color: green; */
+    /* padding: 1rem; */
+}
+
+.menuItemContainer {
+    /* background-color: orange; */
+    flex: 1;
+    padding: 1rem;
+    /* overflow-y: auto; */
+    height: 100%;
+    height: max-content;
+    /* border: 1.5px solid gainsboro; */
+    border-top: none;
+    width: 100%;
+}
+.menuSuggestionBox::-webkit-scrollbar{
+    background-color: var(--light-BG-color);
+    width: 3px;
+}
+.menuSuggestionBox::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    height: 6rem;
+    background-color: var(--cool-dark-grey);
+}
+/* .menuSuggestionBox::-webkit-scrollbar{
+    background-color: yellow;
+    height: 2rem;
+} */
+.itemRow {
+    display: flex;
+    /* background-color: red; */
+    flex-direction: column;
+    border-radius: 8px;
+    margin-bottom: 8px;
+} 
+
+.itemInfo {
+    background-color: white;
+    width: 100%;
+    height: max-content;
+    padding: 16px 8px;
+    cursor: pointer;
+    display: flex;
+
+    border-radius: 8px;
+    border: var(--contrast-border);
+    flex: 1;
+    /* background-color: green; */
+}
+.variantContainer{
+    width: 100%;
+    height: max-content;
+    border: var(--contrast-border);
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: white;
+    /* background-color:white; */
+}
+.variantName{
+    /* font-weight: 400; */
+    display: flex;
+    /* color: var(--contrast-color); */
+    flex-direction: column;
+    flex: 1;
+    /* background-color: orange; */
+}
+
+.variantPrice{
+    /* font-size: 16px; */
+    font-family: "Inter";
+    /* color: var(; */
+    font-weight: 400;
+    /* background-color: orange; */
+}
+
+.variantCard{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    /* flex-direction: column; */
+    padding: 1rem;
+    /* background-color: palegoldenrod; */
+    height: max-content;
+    background-color: var(--light-BG-color);
+    border-radius: 5px;
+    box-shadow: 1px 2px 4px gainsboro;
+    border: 1.5px dashed var(--contrast-color)
+    /* background-color: peru; */
+}
+.variantCardOption{
+    /* background-color: pink; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: end;
+    /* flex-direction: column; */
+    flex: 1;
+}
+.addBtn{
+    background-color: var(--contrast-color);
+    color: white;
+    border: none;
+    font-size: 1rem;
+    border-radius: 4px;
+    padding: 6px 16px;
+
+    cursor: pointer;
+}

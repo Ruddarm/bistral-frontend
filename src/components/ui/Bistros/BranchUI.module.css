@@ -1,0 +1,169 @@
+.zoneCard{
+    /* height: max-content; */
+    min-height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+#zoncCardIcon{
+    background-color: var(--complement-color);
+    width: 3rem;
+    height: 3rem;
+    padding: 0.5rem;
+    margin-right: 1rem;
+    border-radius: 10px;
+}
+
+.tranparentBtn{
+    background-color: transparent;
+    border: none;
+    /* background-color: yellow; */
+    cursor: pointer;
+}
+.zoneOptionContainer{
+    display: flex;
+    flex: 1;
+    padding: 0.5rem;
+    justify-content: space-between;
+    /* background-color: yellow; */
+}
+
+.addZoneContainer{
+    background-color: yellow;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;   
+     /* position: relative; */
+    /* padding: 1rem; */
+}
+.addZoneForm{
+    display: flex;
+    width: 40%;
+    top: 110%;
+    position: absolute;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: var(--light-BG-color);
+    border: 1.5px solid gainsboro;
+}
+.addZoneFormBtn{
+    background-color: var(--contrast-color);
+    margin-left: 10px;
+    padding: 8px 18px;
+    border-radius: 4px;
+    color: var(--light-BG-color);
+    border: none;
+}
+.tableConfiguration{
+    border-radius: 4px;
+    /* width: max-content; */
+    
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: var(--light-BG-color);
+    height: max-content;
+    /* background-color: red; */
+}
+
+.tableConfigHeader{
+    display: flex;
+    justify-content: space-between;
+}
+.tableCardContainer{
+    
+    flex:1;
+    /* background-color: yellow; */
+    display: grid;
+    max-height: max-content;
+    padding: 2px;
+    padding-top: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(2rem, 1fr));
+
+    row-gap: 4px;
+    /* align-items: stretch; */
+    column-gap: 4px;
+
+}
+
+.tableBlock{
+    background-color: var(--complement-color);
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--contrast-color);
+    font-family: "inter";
+    font-size: 14px;
+        border-radius: 4px;
+    border: 1px solid var(--contrast-color);
+}
+
+.addZoneBtn{
+    width: max-content;
+    padding: 8px 1rem;
+    background-color: var(--contrast-color);
+    color: var(--light-BG-color);
+    border: none;
+    border-radius: 5px;
+}
+.zoneCardHeader{
+    display: flex;
+    /* background-color: gainsboro; */
+    padding: 0.5rem;
+}
+
+
+
+.saveContainer {
+    display: flex;
+    /* background-color: pink; */
+    min-width: 30%;
+    padding: 0 1rem;
+}
+
+.saveBtn {
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-family: "poppins";
+    background-color: var(--light-BG-color);
+    color: var(--contrast-color);
+    border: 1.5px solid var(--contrast-color);
+}
+
+.zoneModification {
+    /* background-color: r?ed; */
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    height: max-content;
+    overflow: hidden;
+}
+.zoneInputContainer {
+    display: flex;
+
+}
+
+.zoneConfigContainer {
+    /* flex: 1; */
+    /* padding: 10px; */
+    display: flex;
+    height: 100%;
+    /* border: 1px solid gainsboro; */
+    flex-direction: column;
+    /* display: flex; */
+    /* overflow: auto; */
+    /* padding: 1rem; */
+    /* margin-top: 1rem; */
+    /* overflow: auto; */
+    /* background-color: orange; */
+}

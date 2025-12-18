@@ -1,0 +1,39 @@
+.addBranchContainer{
+    /* flex: 1; */
+    height: max-content;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-BG-color);
+    border-radius: 8px;
+    box-shadow: 1px 2px 4px var(--cool-dark-color);
+    border: 1.5px solid gainsboro;
+
+}
+
+.addBranchFormContainer{
+    /* background-color:; */
+    padding: 1rem;
+    flex: 1;
+    display: flex;
+}
+.addBranchForm{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    /* background-color: orange; */
+}
+.addBrnchBtn{
+    border: none;
+    padding: 6px 16px;
+    font-size: 1rem;
+    /* color: var(--cool-dark-color); */
+    /* background-color: white; */
+    color: white;
+    align-self: center;
+    border-radius: 4px;
+    font-family: "poppins";
+    margin: 1rem;
+    cursor: pointer;
+    background-color: var(--cool-dark-grey);
+}

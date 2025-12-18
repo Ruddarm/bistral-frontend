@@ -1,0 +1,222 @@
+
+.CreateItemContainer{
+    background-color: var(--light-BG-color);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid white;
+    border-radius: 4px;
+    /* background-color: white; */
+    box-shadow: 2px 1px 4px black;
+}
+
+.createItemTitle{
+    flex: 1;
+    font-size: 1.2rem;
+    font-family: "Poppins";
+    color: var(--cool-dark-grey);
+     /* background-color: red; */
+}
+.closeBarItem{
+    
+}
+.CloseBarTitle{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* background-color: orange; */
+    flex: 1;
+}
+.formContainer{
+    flex: 1;
+    /* background-color: red; */
+    display: flex;
+    padding: 0 1rem;
+    overflow-y: auto;
+    flex-direction: column;
+
+}
+.form{
+    height: max-content;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+
+}
+.formLable{
+    padding: 0.5rem 0;
+    padding-bottom: 0rem;
+    font-size: 1rem;
+    font-family: "Poppins";
+    /* background-color: red; */
+    display: flex;
+    padding: 4px;
+    margin: 0;
+    /* justify-content: center; */
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    color: var(--very-dark-grey);
+}
+.formInput{
+    border: 1px solid gainsboro;
+    padding: 0.5rem;
+    font-family: "Poppins";
+    font-size: 1rem;
+    flex: 1;
+    color: var(--cool-dark-grey);
+    border-radius: 5px;
+    /* background-color: red; */
+}
+.variantSection{
+    display: flex;
+    flex-direction: column;
+    /* background-color: green; */
+}
+.variantRow{
+    /* background-color: purple; */
+    display: flex;
+    padding: 0.5rem ;
+    justify-content: space-around;
+}
+
+.variantNameInputContainer{
+    width: 40%;
+    padding: 0.5rem;
+    /* background-color: red; */
+}
+
+.variantNameInput{
+    width: 100%;
+}
+.variantPriceQtyInputContainer{
+    /* background-color: blue; */
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    /* column-gap: 5%; */
+}
+
+.variantPriceInnerDiv{
+    width: 100%;
+    flex: 1;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    height: 100%;
+    /* background-color: pink; */
+}
+.addVariantBtn{
+    border: 1px solid gainsboro;
+    cursor: pointer;
+    width: max-content;
+    padding: 0.5rem 1rem;
+    align-self: center;
+    background-color: var(--cool-dark-grey);
+    /* box-shadow: 1px 1px 4px var(--cool-dark-grey); */
+    align-self: flex-end;
+    /* color: white; */
+    border-radius: 4px;
+    /* color:var(--cool-dark-grey); */
+    color: white;
+}
+.createItemBtn{
+    background-color: var(--cool-dark-grey);
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    padding: 0.5rem;
+    font-family: "poppins";
+    color: white;
+    width: 30%;
+    font-size: 1.5rem;
+    align-self: center;
+    margin: 0.5rem;
+}
+.variantSectionHeading{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    align-content: center;
+    /* background-color: orange; */
+}
+.checkBoxContainer{
+    /* background-color: orange; */
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+}
+.errorBlock{
+color: tomato;
+padding: 0 0.5rem ;
+}
+.checkBox{
+    width: 16px;
+  height: 16px;
+    margin-left: 1rem;
+    /* background-color: yellow; */
+}
+
+.categoryForm{
+    width: 100%;
+    display: flex;
+    /* background-color: palegoldenrod; */
+}
+
+
+.createCategoryFormBtn{
+    margin-left: 0.6rem;
+    background-color: white;
+    color: var(--cool-dark-grey);
+    width: 6rem;
+    cursor: pointer;
+    border: 1.5px solid gainsboro;
+    border-radius: 4px;
+    /* border: none; */
+}
+.createCategoryFormBtn:hover{
+    color: white;
+    background-color: goldenrod;
+}
+
+.createVariantContainer{
+    /* background-color: yellow; */
+    width: 50%;
+    background-color: var(--light-BG-color);
+    height: max-content;
+    box-shadow: 1px 2px 4px var(--cool-dark-grey);
+    border-radius: 5px;
+}
+
+.variantFormContainer{
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    flex: 1;
+}
+
+.priceQtyDivContainer{
+    /* background-color: orange; */
+    display: flex;
+}
+.createVariantBtn{
+    margin-top: 1rem;
+    width: max-content;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    font-family: "poppins";
+    border-radius: 4px;
+    border: 2px solid gainsboro;
+    padding: 0.5rem 1rem;
+    background-color: var(--cool-dark-grey);
+    align-self: center;
+}

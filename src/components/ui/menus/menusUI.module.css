@@ -1,0 +1,102 @@
+
+.menuCardContainer{
+    background-color: white;
+    width: 100%;
+    /* border: 1px solid red; */
+    border-radius: 8px;
+    border: var(--contrast-border);
+    height: auto;
+    cursor: pointer;
+    height: 100%;
+    padding: 0.5rem;
+    display: flex;
+    box-shadow: 1px 2px 4px gainsboro;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    /* align-items: flex-start  !important; */
+}
+
+.menuCardInfo{
+    flex: 1;
+    /* background-color: yellow; */
+    display: flex;
+    height: max-content;
+    justify-content: center;
+    align-items: center;
+    /* padding: 1rem; */
+    /* flex-direction: column; */
+}
+.menuCardIconContainer{
+    /* background-color: pink; */
+    width: max-content;
+    display: flex;
+    padding: 1rem;
+    height: 100%;
+}
+.menuCardNameContainer{
+    flex:1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: purple; */
+}
+.menuCard{
+    /* background-color: green; */
+    flex: 1;
+    display: flex;
+    
+}
+#menuCardName{
+    font-size: 1rem;
+    font-family: "poppins";
+    color: var(--cool-dark-grey);
+    font-weight: 400;
+    padding: 0.5rem;
+    padding-left: 0;
+    /* background-color: gray; */
+}
+#menuCardBistroName{
+    /* background-color: yellow; */
+    width: max-content;
+    font-family: "inter";
+    font-size: 14px;
+    color: var(--cool-dark-grey);
+    color: ghostwhite;
+    padding: 4px;
+    border-radius: 4px;
+    background-color: var(--cool-dark-grey);
+}
+#menuCardIcon{
+    width: 3rem;
+    height: 3rem;
+
+}
+.ArroIconContainer{
+    /* background-color: rebeccapurple; */
+}
+.BistroNameButtonContainer{
+    display: grid;
+    padding: 4px;
+    grid-template-columns: 2rem 1fr;
+    justify-content: flex-end;
+    /* background-color: orange; */
+}
+.BistroNameButtonContainer:hover{
+    background-color: goldenrod;
+}
+.bistroNameBtn{
+    display: flex;
+    background-color: transparent;
+    width: 100%;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: "inter";
+    color: var(--cool-dark-grey);
+    border: none;
+    align-items: center;
+    padding-left: 1.5rem;
+    /* background-color: purple; */
+    margin-top: 2px;
+    /* padding: 2px; */
+}

@@ -1,0 +1,92 @@
+
+.homeLayoutContainer{
+    flex: 1;
+    /* background-color: orange; */
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    overflow: auto;
+
+}
+.homeLayoutHeader{
+    /* background-color: green; */
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0.5rem;
+}
+
+.headerTitle{
+    font-size: 36px;
+    font-size: "Lato";
+    color: var(--contrast-color);
+    padding: 8px 0;
+    /* background-color: orange; */
+}
+
+.matrixCardContainer{
+    /* flex: 1; */
+    height: max-content;
+    display: flex;
+    padding: 1rem 8px;
+    /* background-color: green; */
+}
+
+.fitlerContainer{
+    /* background-color: orange; */
+    height: max-content;
+    display: flex;
+    padding: 0.5rem;
+    justify-content: flex-end;
+}
+
+.analysisContainer{
+    display: flex;
+    height: max-content;
+    flex-direction: column;
+    /* background-color : green; */
+}
+.orderChartContainer{
+    width: 100%;
+    padding: 8px 8px;
+    display: flex;
+    height: max-content;
+    padding-bottom: 1rem;
+    column-gap: 1rem;
+    height: 800px;
+    /* background-color: red; */
+}
+
+.twoChartContainer{
+    background-color: orange;
+    /* padding: 1rem; */
+
+}
+
+.gridContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    /* background-color: pink; */
+}
+
+.flexContainer{
+    display: none;
+    display: flex;
+    height: 100%;
+    /* min-height: 100%; */
+    flex: 1;
+    /* height: 300px; */
+    flex-direction: column;
+    /* height: max-content; */
+    /* padding: 8px; */
+    /* background-color: purple; */
+}
+
+.breakDownContainers{
+    height: 400px;
+    width: 100%;
+    /* background-color: yellow; */
+}
+

@@ -1,0 +1,111 @@
+.menuItemVariantOptionBtn {
+    border: none;
+    flex: 1;
+    font-size: 1.2rem;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    background-color: transparent;
+    /* background-color: var(--cool-dark-grey); */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: pink; */
+    overflow: hidden;
+}
+
+.menuItemVariantOptionBtn:hover {
+    background-color: gainsboro;
+}
+
+#variantOptionIcon {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: pink; */
+    /* background-color: yellow; */
+}
+
+
+.categoryCard {
+    min-width: max-content;
+    padding: 0.5rem 1.5rem;
+    height: max-content;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1.5px solid var(--contrast-color);
+    color: var(--contrast-color);
+    background-color: transparent;
+    font-family: "inter";
+    margin-left: 1rem;
+    text-align: center;
+    display: flex;
+    /* box-shadow: 2px 1px 4px gainsboro; */
+    /* background-color: white; */
+}
+
+
+.categoryCard:hover {
+    background-color: gainsboro;
+}
+
+.categoryCardActive {
+    background-color: var(--contrast-color);
+    color: white;
+     border: var(--contrast-border);
+}
+
+.menuItemListItem {
+    padding: 0.5rem;
+    box-shadow: 2px 2px 6px gainsboro;
+    display: flex;
+    border: 1.5px dashed var(--contrast-color);
+    background-color: var(--light-BG-color);
+    width: 350px;
+    height: max-content;
+    ;
+    justify-content: center;
+    /* align-items: center; */
+    /* background-color: green; */
+    flex-direction: column;
+    border-radius: 10px;
+    transition: height 1s ease;
+
+}
+
+.menuAlphabatesContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 0.5rem;
+    /* background-color: orange; */
+}
+
+#menuAlphabates {
+    width: max-content;
+    /* margin-top: 1rem; */
+    background-color: var(--light-BG-color);
+    font-size: 14px;
+    padding: 2px 10px;
+    display: flex;
+    cursor: pointer;
+    align-items: flex-end;
+    font-family: "poppins";
+    color: var(--cool-dark-grey);
+    border-radius: 2rem;
+    background-color: white;
+    border: 1px solid gainsboro;
+}
+
+.itemName {
+    font-size: 18x;
+    font-family: "poppins";
+    color: var(--cool-dark-grey);
+    font-weight: 600px;
+}

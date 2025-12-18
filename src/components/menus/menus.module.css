@@ -1,0 +1,56 @@
+.menuCardContainer {
+    width: 100%;
+    /* background-color: purple; */
+    padding: 0.5rem;
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    height: max-content;
+    align-items: start;   /* IMPORTANT */
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+}
+
+
+.createMenuContainer{
+    /* flex: 1; */
+    width: 50%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid gainsboro;
+    padding: 10px;
+    box-shadow: 2px 2px 4px gray;
+    border-radius: 5px;
+    background-color: var(--light-BG-color);
+}
+
+.createMenuContainerCloseBar{
+    /* background-color: pink; */
+    display: flex;
+    width: 100%;
+    align-content: center;
+}
+.createMenuForm{
+    /* background-color: orange; */
+    display: flex;
+
+    flex-direction: column;
+}
+.createMenuFormContainer{
+    padding: 10px;
+    /* background-color: orange; */
+    flex: 1;
+    /* width: 100px; */
+}
+.createMenuBtn{
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    justify-self: center;
+    font-family: "poppins";
+    color: var(--light-BG-color);
+    align-self: center;
+    background-color: var(--cool-dark-grey);
+    margin-top: 1rem;
+    cursor: pointer;
+}

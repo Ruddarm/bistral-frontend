@@ -1,0 +1,44 @@
+
+.SideBarContainer{
+    flex: 1;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 3.5rem;
+    /* background-color:  orange; */
+}
+.SideBarMenuContainer
+{   
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+}
+.SideBarMenuContainerButton{
+    background-color: transparent;
+    border: none;
+    /* background-color: orange; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+.SideBarMenuContainerButton:hover{
+    background-color: black;
+}
+.SideBarMenuIcons
+{   
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    /* background-color: orange; */
+}

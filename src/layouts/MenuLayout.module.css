@@ -1,0 +1,101 @@
+
+.menuLayoutContainer{
+    flex: 1;
+    /* background-color: orange; */
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid gainsboro; */
+    border-radius: 4px;
+    padding: 0;
+    /* display: none; */
+    /* flex-direction: column; */
+}
+.menuLayoutBar{
+    /* background-color: yellow; */
+    width: 100%;
+    /* padding: 0 0.5rem; */
+    display: flex;
+    height: max-content;
+    justify-content: space-between;
+    height: max-content;
+}
+.menuBarButtonContainer{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+    /* height: max-content; */
+    padding: 0 0.5rem;
+    /* background-color: purple; */
+}
+.menuLayOutBarTitle{
+    flex: 1;
+    display: flex;
+    padding: 0 1rem ;
+    color: white;
+    height: max-content;
+    flex-direction: column;
+    /* background-color: red; */
+}
+.menuLayoutCardContainer{
+    flex: 1;
+    /* background-color: pink; */
+    display: flex;
+    padding: 0 0.5rem;
+}
+
+.BistroFilterContainer{
+    width: 100%;
+    display: flex;
+    padding: 0.5rem 1rem;
+    /* background-color: green; */
+    border-radius: 4px;
+    justify-content: flex-end;
+    align-content: flex-end;
+    height: max-content;
+}
+.bistroSuggestion{
+    top: 100%;
+    left: 0;
+    position: absolute;
+    min-width: 100%;
+    width: max-content;
+    margin-top: 5px;
+    height: max-content;
+    padding: 4px;
+    border-radius: 4px;
+    border: 1px solid gainsboro;
+    background-color: white;
+    box-shadow: 2px 1px 4px gainsboro;
+}
+.bistroFilterBtn{
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    border: 1px solid gainsboro;
+    justify-content: center;
+    border-radius: 4px;
+    padding: 10px 4px;
+    align-items: center;
+    width: max-content;
+    background-color: transparent;
+    /* background-color: orange; */
+}
+#bistroFilterTitle{
+    /* display: flex; */
+    /* flex: 1; */
+    justify-content: center;
+    font-size: 1rem;
+    color: var(--cool-dark-grey);
+    align-items: center;
+    padding: 0 30px;
+    flex-wrap: nowrap;
+    width: max-content;
+    /* background-color: green; */
+}
+.menuBarCreateBtnContainer{
+    padding: 1rem;
+    background-color: green;
+    display: flex;
+}
