@@ -16,6 +16,7 @@
     overflow: hidden;
     overflow-x: hidden;
     flex: 1;
+    /* color: var(--contrast-color); */
 }
 
 .mainLayoutSideBarContainer {
@@ -66,9 +67,10 @@
     /* background-color: aliceblue; */
     margin: 0;
     font-family: "Playfair Display";
-    color: var(--medium-grey) !important;
+    /* color: var(--medium-grey) !important; */
     /* color: red; */
     /* padding: 0.5rem; */
+    color: var(--contrast-color) !important;
 }
 
 

@@ -31,14 +31,14 @@ function DashBoardFilter() {
     return (
         <div className={Style.filterBar}>
             <div className={Style.filterContainer}>
-                <Icon src={RestaurantIon}></Icon>
+                <Icon  src={RestaurantIon}></Icon>
                 <MultiFilterSelect
                     onChange={(s) => { handleBistroSelection(s) }}
                     placeHolder={"Select Bistro"} options={options} ></MultiFilterSelect>
             </div>
 
             <div className={Style.filterContainer}>
-                <Icon src={CalanderIcon}></Icon>
+                <Icon id={Style.filterIcon} src={CalanderIcon}></Icon>
                 <SingleSelect
                     onChange={(s) => { handelRangeChange(s) }}
                     value={selectedRange}

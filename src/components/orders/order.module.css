@@ -211,6 +211,7 @@
     border-radius: 50%;
 }
 
+
 .newItemState {
     background-color: green;
 }
@@ -673,4 +674,12 @@
     flex-direction: column;
     height: max-content;
     /* background-color: red;    padding-bottom: 200px; */
+}
+
+.tranparentBtn{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
 }

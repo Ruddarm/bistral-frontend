@@ -10,7 +10,7 @@
 .bistroTitle{
     font-size: 24px;
     font-family: "poppins";
-    color: var(--medium-grey);
+    color: var(--contrast-color);
     /* background-color: orange; */
 }
 

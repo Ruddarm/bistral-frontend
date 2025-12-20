@@ -55,10 +55,10 @@
 
 #matrixIcon {
     border: var(--contrast-border);
-    width: 2.5rem;
+    width: 3rem;
     padding: 10px;
     border-radius: 8px;
-    height: 2.5rem;
+    height: 3rem;
     background-color: var(--complement-color);
     border: 1px solid var(--contrast-color);
     /* background-color: purple; */

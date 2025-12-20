@@ -18,6 +18,10 @@
     /* background-color: green; */
 }
 
+#filterIcon{
+    width: 2rem;
+    height: 2rem;
+}
 .filterContainer {
     width: max-content;
     min-width: 80%;

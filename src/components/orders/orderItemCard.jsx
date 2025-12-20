@@ -1,5 +1,7 @@
+import Icon from "../ui/Icons";
 import Style from "./order.module.css";
 import OrderQtyOption from "./orderQtyOption";
+import DeleteIcon from "../../assets/delete.png"
 function OrderItemCard({ increaseQty, decreaseQty, item, removeItem }) {
     // console.log(item)
     return (
@@ -15,7 +17,9 @@ function OrderItemCard({ increaseQty, decreaseQty, item, removeItem }) {
             <div className={Style.optionContainer}>
                 <OrderQtyOption increase={() => { increaseQty(item) }} decrease={() => { decreaseQty(item) }} incrementFun={increaseQty} qty={item.orderedQty}></OrderQtyOption>
                 <div className={Style.incrementQtyItem}>
-                    <button onClick={() => { removeItem(item.orderItemId || item.variantId) }} className={Style.itemEditBtn}>del</button>
+                    <button onClick={() => { removeItem(item.orderItemId || item.variantId) }} className={`${Style.itemEditBtn} ${Style.tranparentBtn}`}>
+                        <Icon src={DeleteIcon}></Icon>
+                    </button>
                 </div>
             </div>
 
