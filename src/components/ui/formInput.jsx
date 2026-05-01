@@ -15,7 +15,7 @@ const FormSelectInput = ({ register, name, rules, children }) => {
     return (
         <select
             className={Style.formInput}
-            {...register(name, rules)}
+            // {...register(name, rules)}
         >
             {children}
         </select>

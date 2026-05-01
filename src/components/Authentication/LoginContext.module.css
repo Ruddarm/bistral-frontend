@@ -1,0 +1,47 @@
+
+.LoginContextContainer{
+
+    /* background-color: red; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.loginFormContainer{
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    /* padding: 0.25rem; */
+}
+
+.loginSelect{
+    display: flex;
+    padding: 0.25rem 0rem;
+    flex-direction: column;
+    /* background-color: purple; */
+}
+
+.loginBtnDiv{
+    padding: 0rem 0.5rem;
+    /* background-color: pink; */
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+}
+
+.loginBtn{
+    /* background-color: red; */
+    border: none;
+    background-color: var(--contrast-color);
+    border-radius: 8px;
+    color: white;
+    width: max-content;
+    font-family: "poppins";
+    font-size: 18px;
+    box-shadow: 1px 2px 4px gainsboro;
+    padding: 4px 32px ;
+    cursor: pointer;
+}

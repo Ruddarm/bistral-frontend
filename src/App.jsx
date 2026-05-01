@@ -14,22 +14,25 @@ import MainLayout from './layouts/MainLayout'
 import Header from './components/Header/Header'
 import DashboardHomeLayout from './layouts/DashboardHomeLayout'
 import DashboardHomePage from './pages/DashboardHome/DashboardHomePage'
+import { AuthContextProvider } from './hooks/AuthenticationContext'
 function App() {
 
   return (
     <>
       {/* <a href='/home'>Go to home</a> */}
-      <Router>
-        <Routes>
+      <AuthContextProvider>
+        <Router>
+          <Routes>
             <Route path='/*' element={
               <DashboardHomePage>
-                
+
               </DashboardHomePage>
             } />
-          {/* <Route path='/dashboard' element={<HomePage />} /> */}
-          <Route path='/dashboard/*' element={<DashboardRouter></DashboardRouter>} />
-        </Routes>
-      </Router>
+            {/* <Route path='/dashboard' element={<HomePage />} /> */}
+            <Route path='/dashboard/*' element={<DashboardRouter></DashboardRouter>} />
+          </Routes>
+        </Router>
+      </AuthContextProvider>
     </>
   )
 }

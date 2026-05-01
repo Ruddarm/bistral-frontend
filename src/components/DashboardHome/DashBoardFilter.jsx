@@ -9,12 +9,6 @@ import Select from "react-select"
 import FilterSelect, { MultiFilterSelect, SingleSelect } from "../ui/FilterSelect";
 function DashBoardFilter() {
     const { bistros, range, selectedRange, handelRangeChange, handleBistroSelection } = useContext(AnyalticsContext)
-    // console.log(bistros)
-    // const list = bistros.map(b => ({
-    //     value: b.bistroId,
-    //     label: b.bistroName,
-    //     isSelected: false
-    // }))
     const [options, setOptions] = useState([])
     useEffect(() => {
         if (bistros && bistros.length > 0) {
@@ -36,7 +30,6 @@ function DashBoardFilter() {
                     onChange={(s) => { handleBistroSelection(s) }}
                     placeHolder={"Select Bistro"} options={options} ></MultiFilterSelect>
             </div>
-
             <div className={Style.filterContainer}>
                 <Icon id={Style.filterIcon} src={CalanderIcon}></Icon>
                 <SingleSelect

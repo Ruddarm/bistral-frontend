@@ -2,7 +2,7 @@
     background-color: white;
     width: 100%;
     display: flex;
-    box-shadow: 1px 2px 4px var(--cool-dark-grey);
+    /* box-shadow: 1px 2px 4px var(--cool-dark-grey); */
     /* border-bottom:2px solid gainsboro; */
     min-height: 3rem;
     z-index: 1000;
@@ -30,4 +30,46 @@
 .headerLeftDiv{
     /* background-color: green; */
     flex: 1;
+    padding: 0.5rem 0rem;
+    display: flex;
+    cursor: pointer;
+    justify-content: flex-end;
+    position: relative;
+
+}
+
+.userLoginContainer{
+    background-color: var(--complement-color);
+    width: 30%;
+    display: flex;
+    align-items: center;
+    border: 1.5px solid var(--contrast-color);
+    border-radius: 8px;
+    padding: 0.25rem 0.5rem;
+    
+}
+
+.bistroNameTitle{
+    /* background-color: red; */
+    flex: 1;
+    padding: 0 0.15rem;
+    font-size: 1rem;
+    color: var(--cool-dark-grey);
+    font-family: "poppins";
+}
+
+.LoginContextWrapper{
+    background-color: white;
+    width: 40%;
+    top: 100%;
+    border-radius: 8px;
+    /* overflow: hidden; */
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1.5px solid gainsboro;
+    box-shadow: 1px 2px 4px gainsboro;
+    height: 250px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
 }
