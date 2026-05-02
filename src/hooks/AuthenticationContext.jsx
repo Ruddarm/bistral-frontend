@@ -1,56 +1,65 @@
-import { createContext, useState } from "react";
+import axios from "axios";
+import { createContext, useEffect, useState } from "react";
+import { getUserContext, switchContext } from "../api/auth/authApi";
+import api from "../api/axiosInstance";
 
 
 const AuthContext = createContext();
 
 function AuthContextProvider({ children }) {
-    const [bistroId, setBistroId] = useState("");
-    const [branchId, setBranchId] = useState("");
-    const [roleId, setRoleId] = useState("");
+    // const [bistroId, setBistroId] = useState("");
+    // const [branchId, setBranchId] = useState("");
+    // const [roleId, setRoleId] = useState("");
+    const [token, setToken] = useState(null)
     const [currentBistro, setCurrentBistro] = useState(null);
     const [currentBranch, setCurrentBranch] = useState(null)
     const [currentRole, setCurrentRole] = useState(null)
-    const [bistros, setBistros] = useState([{
-        bistroName: "dine", bistroId: 123,
-        branches: [
-            {
-                branchName: "dine-seawood",
-                branchId: 234,
-                roles: [
-                    {
-                        roleName: "Manager",
-                        roleId: 234
-                    },
-                    {
-                        roleName: "Cashier",
-                        roleId: 3423
-                    }
-                ]
 
-            },
-        ]
-    },
-    {
-        bistroName: "mono-kharghar", bistroId: 124,
-        branches: [
+    const login = async () => {
+        const data = await axios.post("http://localhost:8080/api/v1/auth/login",
             {
-                branchName: "mono-seawood",
-                branchId: 234,
-                roles: [
-                    {
-                        roleName: "Manager",
-                        roleId: 234
-                    },
-                    {
-                        roleName: "Cashier",
-                        roleId: 3423
-                    }
-                ]
-
-            },
-        ]
+                userName: "firstUser@gmail.com",
+                password: "pswd123"
+            }
+        )
+        setToken(data.data.data.accessToken)
     }
-    ])
+
+    const switchUserContext = async () => {
+        console.log(currentRole)
+        const response = await switchContext({
+            "bistroId": currentBistro.bistroId,
+            "branchId": currentBranch.branchId,
+            "roleId": currentRole.userRoleId
+        })
+        console.log(response)
+    }
+
+
+    const getContext = async () => {
+        const data = await getUserContext()
+        setBistros(data)
+    }
+
+    useEffect(() => {
+        login();
+    }, [])
+
+    useEffect(() => {
+        if (!token) {
+            return;
+        };
+        api.interceptors.request.use(
+            (config) => {
+                config.headers.Authorization = `Bearer ${token}`;
+                return config;
+            },
+            (error) => Promise.reject(error)
+        );
+        getContext();
+    }, [token])
+
+    const [bistros, setBistros] = useState([]);
 
     const handleBistroSelection = (bistro) => {
         const selectedBistro = bistros.find(b => b.bistroId === bistro.value)
@@ -75,6 +84,7 @@ function AuthContextProvider({ children }) {
             handleBistroSelection,
             handleBranchSelection,
             handleRoleSelection,
+            switchUserContext,
             currentBistro,
             currentBranch,
             currentRole,

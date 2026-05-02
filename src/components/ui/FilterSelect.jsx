@@ -40,7 +40,6 @@ function MultiFilterSelect({ placeholder, options, onChange }) {
 
 
 function SingleSelect({ options, value, onChange, placeholder }) {
-    console.log("opti is", options)
     return (
         <Select
             

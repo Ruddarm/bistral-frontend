@@ -11,6 +11,7 @@ function LoginContext() {
         handleRoleSelection,
         handleBranchSelection,
         handleBistroSelection,
+        switchUserContext,
         currentBistro,
         currentBranch,
         currentRole
@@ -91,7 +92,7 @@ function LoginContext() {
                 </div>
             </div>
             <div className={Style.loginBtnDiv}>
-                <button className={Style.loginBtn}>
+                <button onClick={switchUserContext} className={Style.loginBtn}>
                     Login
                 </button>
             </div>
