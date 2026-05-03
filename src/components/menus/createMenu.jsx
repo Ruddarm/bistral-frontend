@@ -15,7 +15,6 @@ function CreateMenu() {
     const { handelCreateMenu, handelCreateNewMenu, bistros } = useContext(MenuContext)
     const { register, control, handleSubmit, reset, formState: { errors } } = useForm();
     const onSubmit = (data) => {
-        console.log("Final Data", data)
         handelCreateNewMenu(data)
     }
     return (
@@ -31,7 +30,7 @@ function CreateMenu() {
                     <FormLabel labelTitle={"Menu Card Name"}></FormLabel>
                     <FormInput register={register} name={"menuName"} rules={{ required: "Menu Card Name is Required" }} />
                     {errors.menuName && (<ErrorInput erroMsg={errors.menuName.message}></ErrorInput>)}
-                    <FormLabel labelTitle={"Select Bistro"}></FormLabel>
+                    {/* <FormLabel labelTitle={"Select Bistro"}></FormLabel>
                     <FormSelectInput
                         register={register}
                         name={"bistroId"}
@@ -41,7 +40,7 @@ function CreateMenu() {
                             bistro.bistroName!="All"?
                             <FormInputOption value={bistro.bistroId} name={bistro.bistroName}></FormInputOption>:<></>
                         ))}
-                    </FormSelectInput>
+                    </FormSelectInput> */}
                     {errors.bistroId && (<ErrorInput erroMsg={errors.bistroId.message}></ErrorInput>)}
 
                     <button className={Style.createMenuBtn}>

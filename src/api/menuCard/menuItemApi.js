@@ -1,14 +1,14 @@
-import axios from "axios";
+import api from "../axiosInstance";
 
 const getMenuCard = async (bistroId, menuId) => {
     // console.log(bistroId,menuId)
-    return await axios.get(`http://localhost:8084/bistros/${bistroId}/menus/${menuId}/card`)
+    return await api.get(`/bistros/menus/${menuId}/card`)
 }
 
-const createMenuItems = async (menuId,  menuItem ) => {
+const createMenuItems = async (menuId, menuItem) => {
     console.log(menuItem)
-    return await axios.post(`http://localhost:8084/bistros/menus/${menuId}/menu-items`, menuItem)
+    return await api.post(`/bistros/menus/${menuId}/menu-items`, menuItem)
 }
 
 
-export { getMenuCard , createMenuItems}
+export { getMenuCard, createMenuItems }

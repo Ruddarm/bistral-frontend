@@ -9,20 +9,21 @@ import CreateMenu from "./createMenu";
 
 
 function Menus() {
-    const { menus, createMenu,handelCreateMenu } = useContext(MenuContext)
+    const { menus, createMenu, handelCreateMenu } = useContext(MenuContext)
+    console.log(menus)
     // console.log(menus)
     return (
         <div className={Style.menuCardContainer}>
             {createMenu && <OverlayContainer>
                 <CreateMenu></CreateMenu>
             </OverlayContainer>}
-            {menus?.map((bistro) => (
-                bistro?.menuResponseList.map((menuCard) => (
-                    <MenuCardContainer>
-                        <MenuCard menuCard={{ ...menuCard, bistroId: bistro.bistroId, bistroName: bistro.bistroName }}></MenuCard>
-                    </MenuCardContainer>
-                ))
-            ))}
+            {menus?.map((menu) => (
+                <MenuCardContainer>
+                    <MenuCard menuCard={{ ...menu}}
+                    ></MenuCard>
+                </MenuCardContainer>
+            ))
+            }
             <MenuCardContainer>
                 <CreateBtn onClick={handelCreateMenu}></CreateBtn>
             </MenuCardContainer>

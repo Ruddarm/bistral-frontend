@@ -1,5 +1,6 @@
-import { useEffect, useState, createContext } from "react";
+import { useEffect, useState, createContext, useContext } from "react";
 import { createMenuApi, getAllMenusApi } from "../../api/menus/menusApi";
+import AuthContext from "../AuthenticationContext";
 
 
 
@@ -7,6 +8,7 @@ export const MenuContext = createContext();
 
 
 function MenuProvider({ children, userIdArg }) {
+    const { currentBistro } = useContext(AuthContext);
     const [userId, setUserId] = useState(userIdArg);
     const [menus, setMenus] = useState()
     const [bistroFilter, setBistroFilter] = useState(false);
@@ -20,12 +22,13 @@ function MenuProvider({ children, userIdArg }) {
         , []);
 
     const fetchALlMenus = async () => {
-        const res = await getAllMenusApi(userId);
-        setMenus(res.data)
-        setBistros([...bistros, ...res.data.map(item => ({
-            bistroId: item.bistroId,
-            bistroName: item.bistroName
-        }))]);
+        const res = await getAllMenusApi();
+        console.log(res)
+        setMenus(res.data.data)
+        // setBistros([...bistros, ...res.data.map(item => ({
+        //     bistroId: item.bistroId,
+        //     bistroName: item.bistroName
+        // }))]);
         //   console.log(res)
     }
     const handelCreateMenu = () => {
@@ -33,8 +36,9 @@ function MenuProvider({ children, userIdArg }) {
         setCreateMenu(!createMenu)
     }
     const handelCreateNewMenu = async (menu) => {
+        console.log(menu)
         try {
-            const res = await createMenuApi(menu.bistroId, menu);
+            const res = await createMenuApi(currentBistro.bistroId, menu);
             // console.log(res)
             fetchALlMenus();
             handelCreateMenu()

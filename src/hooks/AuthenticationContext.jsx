@@ -26,13 +26,13 @@ function AuthContextProvider({ children }) {
     }
 
     const switchUserContext = async () => {
-        console.log(currentRole)
-        const response = await switchContext({
+        const data = await switchContext({
             "bistroId": currentBistro.bistroId,
             "branchId": currentBranch.branchId,
             "roleId": currentRole.userRoleId
         })
-        console.log(response)
+        console.log(data)
+        setToken(data.accessToken)
     }
 
 
@@ -49,7 +49,7 @@ function AuthContextProvider({ children }) {
         if (!token) {
             return;
         };
-        api.interceptors.request.use(
+        const interceptor = api.interceptors.request.use(
             (config) => {
                 config.headers.Authorization = `Bearer ${token}`;
                 return config;
@@ -57,6 +57,10 @@ function AuthContextProvider({ children }) {
             (error) => Promise.reject(error)
         );
         getContext();
+
+        return () => {
+            api.interceptors.request.eject(interceptor);
+        };
     }, [token])
 
     const [bistros, setBistros] = useState([]);

@@ -11,7 +11,6 @@ import OverlayContainer from "../components/ui/OverLayContainer";
 import LayoutTitle, { SubPara } from "../components/ui/Titles";
 function MenuLayout() {
     const { handelBistroNameFilterSuggestion, bistroFilter, bistros, selectedBistro } = useContext(MenuContext);
-    // console.log(bistros)
     return (
         <LayoutHeader title={"Bistral Menu Manager"}>
             <div className={Style.menuLayoutContainer}>
@@ -19,27 +18,6 @@ function MenuLayout() {
                     <div className={Style.menuLayOutBarTitle}>
                         <LayoutTitle title={"Menu Cards"}></LayoutTitle>
                         <SubPara para={" Choose a menu card to view and manage its items and category"}></SubPara>
-                    </div>
-                    <div className={Style.menuBarButtonContainer}>
-                        <div className={Style.BistroFilterContainer}>
-                            <button onClick={handelBistroNameFilterSuggestion} className={Style.bistroFilterBtn}>
-                                <div style={{ paddingLeft: "12px", marginRight: "1rem" }}>
-                                    <Icon src={RestrauntIcon}>
-                                    </Icon>
-                                </div>
-                                <div id={Style.bistroFilterTitle}>
-                                    {selectedBistro}
-                                </div>
-                                <ItemDropDown></ItemDropDown>
-                                {bistroFilter && <div className={Style.bistroSuggestion}>
-                                    {bistros
-                                        .map((bistro) => (
-                                            <BistroNameButton selected={selectedBistro == bistro.bistroName} bistro={bistro}></BistroNameButton>
-                                        ))}
-                                </div>}
-                            </button>
-
-                        </div>
                     </div>
                 </div>
                 <div className={Style.menuLayoutCardContainer}>

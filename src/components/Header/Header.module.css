@@ -41,21 +41,28 @@
 .userLoginContainer{
     background-color: var(--complement-color);
     width: 30%;
+    overflow: hidden;
     display: flex;
     align-items: center;
     border: 1.5px solid var(--contrast-color);
     border-radius: 8px;
+    /* background-color: red; */
     padding: 0.25rem 0.5rem;
     
 }
 
 .bistroNameTitle{
     /* background-color: red; */
-    flex: 1;
+    /* flex: 1; */
+    width: auto;
+    /* background-color: purple; */
     padding: 0 0.15rem;
+    overflow: hidden;
     font-size: 1rem;
     color: var(--cool-dark-grey);
     font-family: "poppins";
+    text-wrap-mode: nowrap;
+    text-overflow: ellipsis;
 }
 
 .LoginContextWrapper{

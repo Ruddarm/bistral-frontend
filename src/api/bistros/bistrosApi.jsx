@@ -1,15 +1,16 @@
 import axios from "axios";
+import api from "../axiosInstance";
 
 async function getBistro(bistroId){
-    return await axios.get(`http://localhost:8084/bistros/${bistroId}`)
+    return await api.get(`/bistros/${bistroId}`)
 }
 
 async function createBistro(bistro){
-    return await axios.post("http://localhost:8084/bistros",bistro)
+    return await api.post("/bistros",bistro)
 }
 
 async function  getAllBistros(userId) {
-    return await axios.get(`http://localhost:8084/bistros/list/bistros/user/${userId}`)
+    return await api.get(`/bistros/list/bistros/user/${userId}`)
 }
 
 export {createBistro,getAllBistros,getBistro}
