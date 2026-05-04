@@ -19,7 +19,7 @@ function BistroLayout() {
         <div className={Style.bistroLayoutContainer}>
             <div className={Style.bistroInfContainer}>
                 <div className={Style.flex}>
-                    <PrevButton handelClick={handelPrevBtnClick}></PrevButton>
+                    {/* <PrevButton handelClick={handelPrevBtnClick}></PrevButton> */}
                     <LayoutTitleTwo title={bistro?.bistroName}></LayoutTitleTwo>
                 </div>                
                 <div className={Style.bistroInfoContainer}>

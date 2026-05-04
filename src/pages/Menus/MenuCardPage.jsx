@@ -6,10 +6,10 @@ import MenuCardLayout from "../../layouts/MenuCardLayout";
 
 function MenuCardPage() {
 
-    const { bistroId, menuId , menuName } = useParams();
+    const { menuId, menuName } = useParams();
     return (
         <MainLayout>
-            <MenuCardProvider bistroIdArg={bistroId} menuIdArg={menuId} menuNameArg={menuName}>
+            <MenuCardProvider menuIdArg={menuId} menuNameArg={menuName}>
                 <MenuCardLayout></MenuCardLayout>
             </MenuCardProvider>
         </MainLayout>

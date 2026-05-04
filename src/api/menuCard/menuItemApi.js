@@ -1,6 +1,6 @@
 import api from "../axiosInstance";
 
-const getMenuCard = async (bistroId, menuId) => {
+const getMenuCard = async (menuId) => {
     // console.log(bistroId,menuId)
     return await api.get(`/bistros/menus/${menuId}/card`)
 }

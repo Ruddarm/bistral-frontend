@@ -9,6 +9,7 @@ import { useContext } from "react";
 import { MenuContext } from "../hooks/menu/useMenus";
 import OverlayContainer from "../components/ui/OverLayContainer";
 import LayoutTitle, { SubPara } from "../components/ui/Titles";
+import { Outlet } from "react-router-dom";
 function MenuLayout() {
     const { handelBistroNameFilterSuggestion, bistroFilter, bistros, selectedBistro } = useContext(MenuContext);
     return (
@@ -24,6 +25,7 @@ function MenuLayout() {
                     <Menus></Menus>
                 </div>
             </div >
+            <Outlet/>
         </LayoutHeader >
     )
 }

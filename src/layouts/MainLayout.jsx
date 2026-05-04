@@ -3,6 +3,7 @@ import Style from "./MainLayout.module.css";
 
 import SideBar from "../components/sidebar/SideBar";
 import Header from "../components/Header/Header";
+import { Outlet } from "react-router-dom";
 
 const MainLayout = ({ children }) => {
     // console.log("fuck")

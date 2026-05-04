@@ -30,13 +30,15 @@ function DashboardRouter() {
             <Route path="/menu-manager" element={
                 <HomePage>
                     <MainLayout>
-                        <MenuProvider userIdArg={"1a649890-f608-483d-9ff2-4fe56bb231f4"}>
+                        <MenuProvider >
                             <MenuLayout></MenuLayout>
                         </MenuProvider>
                     </MainLayout>
                 </HomePage>
-            } />
-            <Route path="/menu-manager/:bistroId/:menuId/:menuName"
+
+            }>
+            </Route>
+            <Route path="/menu-manager/:menuId/:menuName"
                 element={
                     <HomePage>
                         <MenuCardPage></MenuCardPage>
@@ -47,11 +49,14 @@ function DashboardRouter() {
                 element={
                     <HomePage>
                         <>
-                            <MainLayout>
-                                <BistrosProvider>
+                            {/* <MainLayout> */}
+                            {/* <BistrosProvider>
                                     <BistroMangerLayout></BistroMangerLayout>
-                                </BistrosProvider>
-                            </MainLayout>
+                                 </BistrosProvider>
+                                  */}
+                            {/* </MainLayout> */}
+                            <BistroPage></BistroPage>
+
                         </>
                     </HomePage>
 

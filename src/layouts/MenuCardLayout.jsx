@@ -18,7 +18,6 @@ function MenuCardLayout({ children }) {
     }
     const [categoryForm, setCategoryForm] = useState(false)
     const { createMenuItem, setCreateMenu, handleCreateCategory, menuName } = useContext(MenuCardContext)
-    console.log(menuName)
     return (
         <>
             <div className={Style.menuCardContainer}>

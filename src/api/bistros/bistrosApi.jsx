@@ -2,7 +2,7 @@ import axios from "axios";
 import api from "../axiosInstance";
 
 async function getBistro(bistroId){
-    return await api.get(`/bistros/${bistroId}`)
+    return await api.get(`/bistros`)
 }
 
 async function createBistro(bistro){

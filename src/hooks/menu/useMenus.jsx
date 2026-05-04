@@ -7,29 +7,23 @@ import AuthContext from "../AuthenticationContext";
 export const MenuContext = createContext();
 
 
-function MenuProvider({ children, userIdArg }) {
+function MenuProvider({ children}) {
     const { currentBistro } = useContext(AuthContext);
-    const [userId, setUserId] = useState(userIdArg);
     const [menus, setMenus] = useState()
     const [bistroFilter, setBistroFilter] = useState(false);
     const [selectedBistro, setSelectedBistro] = useState("All")
     const [bistros, setBistros] = useState([{ bistroName: "All" }]);
+    const [currentMenu,setCurrentMenu]= useState(null)
     const [createMenu, setCreateMenu] = useState(false)
     useEffect(() => {
-
+        
         fetchALlMenus();
     }
         , []);
 
     const fetchALlMenus = async () => {
         const res = await getAllMenusApi();
-        console.log(res)
         setMenus(res.data.data)
-        // setBistros([...bistros, ...res.data.map(item => ({
-        //     bistroId: item.bistroId,
-        //     bistroName: item.bistroName
-        // }))]);
-        //   console.log(res)
     }
     const handelCreateMenu = () => {
         // console.log("called")
@@ -54,7 +48,7 @@ function MenuProvider({ children, userIdArg }) {
     const handelBistroNameFilter = () => {
 
     }
-    return <MenuContext.Provider value={{ menus, handelBistroNameFilterSuggestion, bistroFilter, bistros, selectedBistro, handelCreateMenu, createMenu, handelCreateNewMenu }}>
+    return <MenuContext.Provider value={{ menus, handelBistroNameFilterSuggestion, bistroFilter, bistros, selectedBistro, handelCreateMenu, createMenu, handelCreateNewMenu , setCurrentMenu, currentMenu}}>
         {children}
     </MenuContext.Provider>
 }

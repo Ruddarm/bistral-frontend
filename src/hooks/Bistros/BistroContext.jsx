@@ -6,18 +6,16 @@ import { createBranch } from "../../api/bistros/branchApi";
 const BistroContext = createContext()
 
 function BistroProvider({ bistroIdArg, children }) {
-    const [bistroId, setBistroId] = useState(bistroIdArg);
+    // const [bistroId, setBistroId] = useState(bistroIdArg);
     const [bistro, setBistro] = useState({bistroName: ""})
     const [openCreateBranch, setOpenCreateBranch] = useState(false)
     useEffect(() => {
-        fetchBistro(bistroId)
-    },[bistroId])
-    const fetchBistro = async (bistroId) => {
+        fetchBistro()
+    },[])
+    const fetchBistro = async () => {
         try {
-            console.log(bistroId)
-            const bistroRes = await getBistro(bistroId);
+            const bistroRes = await getBistro();
             setBistro(bistroRes.data);
-            // console.log(bistroRes.data)
         } catch (ex) {
             console.log(ex);
         }
@@ -27,11 +25,11 @@ function BistroProvider({ bistroIdArg, children }) {
     }
     const handelCreateBranch =  async (branch) => {
         // console.log(branch)
-        branch.bistroId= bistroId;
+        // branch.bistroId= bistroId;
         try{
-            const res =  await createBranch(bistroId,branch)
+            const res =  await createBranch(branch)
             console.log(res)
-            fetchBistro(bistroId);
+            fetchBistro();
             handelOpenCreateBranch();
         }catch(e){
             console.log(e)

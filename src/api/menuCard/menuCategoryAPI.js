@@ -1,11 +1,11 @@
 import api from "../axiosInstance";
 
-async function getAllCategory(bistroId, menuId) {
+async function getAllCategory(menuId) {
     // console.log(bistroId,menuId)
-    return await api.get(`/bistros/${bistroId}/menu-category/all/${menuId}`);
+    return await api.get(`/bistros/menus/${menuId}/category/list`);
 }
 
-async function createCategory(bistroId, category) {
-    return await api.post(`/bistros/${bistroId}/menu-category`, category)
+async function createCategory(category) {
+    return await api.post(`/bistros/menus/${menuId}/category`)
 }
 export { getAllCategory, createCategory }

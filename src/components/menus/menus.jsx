@@ -9,9 +9,8 @@ import CreateMenu from "./createMenu";
 
 
 function Menus() {
-    const { menus, createMenu, handelCreateMenu } = useContext(MenuContext)
-    console.log(menus)
-    // console.log(menus)
+    const { menus, createMenu, handelCreateMenu , setCurrentMenu} = useContext(MenuContext)
+    // console.log(setCurrentMenu)
     return (
         <div className={Style.menuCardContainer}>
             {createMenu && <OverlayContainer>
@@ -19,13 +18,13 @@ function Menus() {
             </OverlayContainer>}
             {menus?.map((menu) => (
                 <MenuCardContainer>
-                    <MenuCard menuCard={{ ...menu}}
+                    <MenuCard menuCard={{ ...menu} }
                     ></MenuCard>
                 </MenuCardContainer>
             ))
             }
             <MenuCardContainer>
-                <CreateBtn onClick={handelCreateMenu}></CreateBtn>
+                <CreateBtn onClick={handelCreateMenu} ></CreateBtn>
             </MenuCardContainer>
         </div>
     )

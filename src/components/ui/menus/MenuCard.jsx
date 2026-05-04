@@ -5,10 +5,9 @@ import Icon from "../Icons";
 import { useNavigate } from "react-router-dom";
 
 function MenuCard({ menuCard }) {
-    console.log(menuCard)
     const navigate = useNavigate()
     function goToMenu() {
-        navigate(`${menuCard.bistroId}/${menuCard.menuId}/${menuCard.menuName}`);
+        navigate(`${menuCard.menuId}/${menuCard.menuName}`);
     }
     return (
         <div onClick={goToMenu} className={Style.menuCard}>

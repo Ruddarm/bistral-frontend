@@ -14,7 +14,7 @@ function BistrosProvider({ children, userId = "1a649890-f608-483d-9ff2-4fe56bb23
         fetchBistros();
     }, [])
     const fetchBistros = async () => {
-        try {
+        try {   
             const res = await getAllBistros(userId)
             setBistros(res.data);
             console.log(res)
@@ -29,7 +29,6 @@ function BistrosProvider({ children, userId = "1a649890-f608-483d-9ff2-4fe56bb23
 
     const handelBistroCreate = async (bistro) => {
         try {
-            bistro.userId = "1a649890-f608-483d-9ff2-4fe56bb231f4";
             const res = await createBistro(bistro);
             fetchBistros();
             handelOpenBistroForm();
