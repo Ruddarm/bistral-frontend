@@ -1,6 +1,7 @@
 import Style from "./order.module.css";
 
 function OrderCard({ order, openOrderSideBar, createOrder }) {
+    console.log(order)
     return (
         <>
             <div className={Style.tableCard}>

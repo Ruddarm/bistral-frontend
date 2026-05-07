@@ -5,18 +5,17 @@ const createBranch = async (bistroId, branch) => {
 }
 
 const getBranch = async (bistroId, branchId) => {
-    // console.log(bistroId,branchId)
     const res = await api.get(`/bistros/branches`)
     return res;
 }
 
 const createZone = async (bistroId, body) => {
-    const res = await api.post(`/bistros/branch/zone/`, body)
+    const res = await api.post(`/bistros/branches/zone/`, body)
     return res;
 }
 
 const getAllZones = async (bistroId, branchId) => {
-    const res = await api.get(`/bistros/branch/zone/`)
+    const res = await api.get(`/bistros/branches/zone/`)
     return res;
 }
 

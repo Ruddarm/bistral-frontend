@@ -3,10 +3,15 @@ import Style from "./order.module.css"
 import OrderListContext from "../../hooks/Order/OrderListContext";
 import ActiveOrderFilter from "./ActiveOrderFilter";
 import OrderCard from "./orderCard";
+import LayoutHeader from "../../layouts/LayoutHeader";
 
 function ActiveOrderManager() {
+    console.log("here")
     const {orders,handelCreateOrder,OpenSideBar} = useContext(OrderListContext)
+    console.log(orders)
     return (
+        <LayoutHeader title={"Bistral Order Manager"}>
+
         <div className={Style.activeOrderManagerContainer}>
             {/* <div className={Style.activeOrderFilterContainer}>
                 <ActiveOrderFilter></ActiveOrderFilter>
@@ -21,6 +26,8 @@ function ActiveOrderManager() {
                     </OrderCard>)}
             </div>
         </div>
+        </LayoutHeader>
+
     )
 }
 

@@ -22,7 +22,7 @@ function ActiveOrderFilter() {
                 >
                 </SingleSelect>
             </div>
-            <div className={Style.selectContainer}>
+            {/* <div className={Style.selectContainer}>
 
                 <Icon src={MarkerIcon}></Icon>
                 <SingleSelect
@@ -31,7 +31,7 @@ function ActiveOrderFilter() {
                     options={branches.map((b) => ({ label: b.branchName, value: b.branchId }))}
                     placeholder={"Select Branch"}
                 ></SingleSelect>
-            </div>
+            </div> */}
         </div>
     )
 }

@@ -1,8 +1,7 @@
+import api from "../axiosInstance";
 
-const getOrders = async (branchId, zoneId) => {
-    // console.log(branchId)
-    const res = await api.get(`/orders/branch/${branchId}/zone/${zoneId}/order/all`);
-    // console.log("data is  ", res);
+const getOrders = async (zoneId) => {
+    const res = await api.get(`/orders/branch/zone/${zoneId}/active`);
     return res;
 }
 

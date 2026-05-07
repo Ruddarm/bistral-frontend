@@ -23,7 +23,7 @@ function CreateItemForm() {
     });
 
     const onSubmit = (data) => {
-        // console.log("FINAL DATA:", data);
+        console.log("FINAL DATA:", data);
         const menuItem = {
             itemName: data.itemName,
             isVeg: data.isVeg,
@@ -72,7 +72,7 @@ function CreateItemForm() {
                     </>)) : <></>}
                 </FormSelectInput>
                 {errors.category && <span className={Style.errorBlock}>{errors.category.message}</span>}
-             
+
                 <FormLable labelTitle={"Item Description"}></FormLable>
                 <textarea
                     className={Style.formInput}
